@@ -6,7 +6,7 @@ A pergunta essencial a ser respondida ao avaliar um modelo de machine de learnin
  
 2. VALIDAÇÃO - Já com o modelo treinado, vamos avaliá-lo em um ambiente local confiável. De maneira simplista, consiste em uma simulação da realidade com dados inéditos - não vistos no treinamento.
 
-3. TESTE - Determinar qual será o conjunto de dados a serem utilizados para avaliar o desempenho real do modelo e devem permanecer intocados até o último modelo ser alcançado.
+3. TESTE - Determinar quais serão dados utilizados para avaliar o desempenho real do modelo e, uma vez escolhidos, devem permanecer intocados até o último modelo ser alcançado.
 
 Nota-se em muitos casos uma maior flexibilidade entre as etapas de Validação e Teste, permitindo que ambas acabem por se misturar.
 
@@ -19,7 +19,13 @@ A validação nos permite entender qual o efeito da adição de uma nova variáv
 É fundamental haver uma distinção clara entre as etapas de Validação e Teste para que não se misturem e sobreponham, caso contrário, dependendo do ruído dos dados, a estimativa calculada não refletirá a precisão real do modelo.
 
 ## Técnicas de Amostragem 
-O método que escolhemos para segmentar os dados pode alterar no valor final da acurácia do modelo, mas isso não significa que o modelo de fato piorou ou melhorou, pois os dados permanecem os mesmos. 
-Seed (pseudo)aleatório
+O método que escolhemos para segmentar os dados pode alterar no valor final da acurácia do modelo, mas isso não significa que o modelo de fato piorou ou melhorou, pois o conjunto universo de dados permaneceu o mesmo.
 
-Validação Cruzada
+- Seed (pseudo)aleatório
+  - O problema com divisões aleatórias é que simplesmente por sorte (ou por azar) um outlier pode cair nos seus dados de validação, ou de treino, e comprometer a estimativa ao desbalancear os dados;
+  - Esse método também pode ser implementado com mais de uma seed sendo gerada por um loop, e ao final dos testes no modelo, obtêm-se a acurácia média de todas as iterações. 
+
+- Validação Cruzada (KFold)
+  - Os dados de treino e validação são separados por divisões (Folds);
+  - Cada Fold alterna quais dados serão usados para treino ou validação de uma forma que cada exemplar passa pelo menos uma vez, por cada subconjunto.
+Também é possível tornarmos ainda mais robusta a Validação Cruzada, garantindo ainda mais credibilidade e certeza ao valor de acurácia do modelo obtido ao fim do teste. Para isso combina-se as duas técnicas acima, criando um loop em que cada iteração incrementamos a seed do estado inicial 
