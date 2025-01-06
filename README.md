@@ -18,4 +18,8 @@ A validação nos permite entender qual o efeito da adição de uma nova variáv
 
 É fundamental haver uma distinção clara entre as etapas de Validação e Teste para que não se misturem e sobreponham, caso contrário, dependendo do ruído dos dados, a estimativa calculada não refletirá a precisão real do modelo.
 
-## Técnica de Reamostragem: Validação Cruzada
+## Técnicas de Amostragem 
+O método que escolhemos para segmentar os dados pode alterar no valor final da acurácia do modelo, mas isso não significa que o modelo de fato piorou ou melhorou, pois os dados permanecem os mesmos. 
+Seed (pseudo)aleatório
+
+Validação Cruzada
