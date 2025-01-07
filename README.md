@@ -23,7 +23,7 @@ A validação nos permite entender qual o efeito da adição de uma nova variáv
 É fundamental haver uma distinção clara entre as etapas de Validação e Teste para que não se misturem e sobreponham, caso contrário, dependendo do ruído dos dados, a estimativa calculada não refletirá a precisão real do modelo.
 
 ## Técnicas de Amostragem 
-O método que escolhemos para segmentar os dados pode alterar no valor final da acurácia do modelo, mas isso não significa que o modelo de fato piorou ou melhorou, pois o conjunto universo de dados permaneceu o mesmo.
+O método que escolhemos para segmentar os dados pode alterar no valor final da acurácia do modelo, mas isso não significa que o modelo de fato piorou ou melhorou, pois o conjunto universo de dados permaneceu o mesmo. Para de fato aprimorarmos o nosso modelo, precisamos focar na etapa de Validação, deixando-a mais confiável e menos "aleatória". Algumas técnicas para fazer isso são:
 
 - Seed (pseudo)aleatório
   - O problema com divisões aleatórias é que simplesmente por sorte (ou por azar) um outlier pode cair nos seus dados de validação, ou de treino, e comprometer a estimativa ao desbalancear os dados;
