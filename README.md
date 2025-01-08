@@ -22,7 +22,8 @@ A validação nos permite entender qual o efeito da adição de uma nova variáv
 
 É fundamental haver uma distinção clara entre as etapas de Validação e Teste para que não se misturem e sobreponham, caso contrário, dependendo do ruído dos dados, a estimativa calculada não refletirá a precisão real do modelo.
 
-## Técnicas de Amostragem 
+## 
+### Técnicas de Amostragem 
 O método que escolhemos para segmentar os dados pode alterar no valor final da acurácia do modelo, mas isso não significa que o modelo de fato piorou ou melhorou, pois o conjunto universo de dados permaneceu o mesmo. Para de fato aprimorarmos o nosso modelo, precisamos focar na etapa de Validação, deixando-a mais confiável e menos "aleatória". Algumas técnicas para fazer isso são:
 
 - Seed (pseudo)aleatório
@@ -32,4 +33,7 @@ O método que escolhemos para segmentar os dados pode alterar no valor final da 
 - Validação Cruzada (KFold)
   - Os dados de treino e validação são separados por divisões (Folds);
   - Cada Fold alterna quais dados serão usados para treino ou validação de uma forma que cada exemplar passa pelo menos uma vez, por cada subconjunto.
-Também é possível tornarmos ainda mais robusta a Validação Cruzada, garantindo ainda mais credibilidade e certeza ao valor de acurácia do modelo obtido ao fim do teste. Para isso combina-se as duas técnicas acima, criando um loop em que cada iteração incrementamos a seed do estado inicial 
+Também é possível tornarmos ainda mais robusta a Validação Cruzada, garantindo ainda mais credibilidade e certeza ao valor de acurácia do modelo obtido ao fim do teste. Para isso combina-se as duas técnicas acima, criando um loop em que cada iteração incrementamos a seed do estado inicial
+##
+### Melhorando nosso modelo
+É muito importante acharmos a melhor representação que possiblite ao nosso modelo capturar os padrões mais interessantes no conjunto de dados para resolver o problema em questão.
