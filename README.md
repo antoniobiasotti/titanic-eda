@@ -36,4 +36,4 @@ O método que escolhemos para segmentar os dados pode alterar no valor final da 
 Também é possível tornarmos ainda mais robusta a Validação Cruzada, garantindo ainda mais credibilidade e certeza ao valor de acurácia do modelo obtido ao fim do teste. Para isso combina-se as duas técnicas acima, criando um loop em que cada iteração incrementamos a seed do estado inicial
 ##
 ### Melhorando nosso modelo
-É muito importante acharmos a melhor representação que possiblite ao nosso modelo capturar os padrões mais interessantes no conjunto de dados para resolver o problema em questão.
+Para de fato aprimorarmos nosso modelo, é muito importante acharmos a melhor representação de variáveis que possiblite capturar os padrões mais interessantes no conjunto de dados, de acordo com o problema em questão. Para isso, adicionamos as variáveis: Fare, PcPs, ... 
