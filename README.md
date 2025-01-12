@@ -44,3 +44,5 @@ Para de fato aprimorarmos nosso modelo, é muito importante acharmos a melhor re
 - Fare - valor pago na passagem.
 
 Entretanto, o modelo treinado não foi capaz de superar a pontuação do gender_submission, o que indica que apenas variáveis numéricas não serão suficientes, revelando a necessidade de estudarmos também as variáveis categóricas.
+##
+### Análise de Erro
