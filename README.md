@@ -36,7 +36,7 @@ O método que escolhemos para segmentar os dados pode alterar no valor final da 
   - Cada Fold alterna quais dados serão usados para treino ou validação de uma forma que cada exemplar passa pelo menos uma vez, por cada subconjunto.
 Também é possível tornarmos ainda mais robusta a Validação Cruzada, garantindo ainda mais credibilidade e certeza ao valor de acurácia do modelo obtido ao fim do teste. Para isso combina-se as duas técnicas acima, criando um loop em que cada iteração incrementamos a seed do estado inicial
 ##
-### Melhorando nosso modelo
+### Melhorando o modelo
 Para de fato aprimorarmos nosso modelo, é muito importante acharmos a melhor representação de variáveis que possiblite capturar os padrões mais interessantes no conjunto de dados, de acordo com o problema em questão. Para isso, além das variáveis Sexo e Idade, adicionaremos também: 
 - Pclass - classe em que o passageiro viajou;
 - SibSp - indicador da presença de irmão (Sibling) ou esposa (Spouse);
