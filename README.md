@@ -1,6 +1,7 @@
 ﻿# Titanic EDA Project
 
-A pergunta essencial a ser respondida ao avaliar um modelo de machine de learning é:  
+A pergunta essencial a ser respondida ao avaliar um modelo de machine de learning é:
+
 ***Qual é sua performance em um conjunto de dados nunca visto antes?***  
   
   Isso nos leva ao conceito de:
